@@ -1,6 +1,7 @@
 package ru.netology.web;
 
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -26,7 +27,8 @@ public class CallbackTest {
         System.setProperty("webdriver.chrome.driver", "driver\\chrome\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless", "--disable-gpu", "--ignore-certificate-errors");
-        WebDriver driver = new ChromeDriver(options);
+//        WebDriver driver = new ChromeDriver(options);
+        WebDriverManager.chromedriver().setup();
     }
 
         @BeforeEach
