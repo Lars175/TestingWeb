@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.netology.web.CallbackTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-07-14T08:52:33" hostname="KARELINA-NB2" time="6.033">
+<testsuite name="ru.netology.web.CallbackTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-07-14T10:09:59" hostname="KARELINA-NB2" time="6.366">
   <properties/>
-  <testcase name="shouldSubmitRequest()" classname="ru.netology.web.CallbackTest" time="6.033"/>
+  <testcase name="shouldSubmitRequest()" classname="ru.netology.web.CallbackTest" time="6.366"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[июл. 14, 2020 11:52:33 AM com.codeborne.selenide.drivercommands.LazyDriver getAndCheckWebDriver
+  <system-err><![CDATA[июл. 14, 2020 1:09:59 PM com.codeborne.selenide.drivercommands.LazyDriver getAndCheckWebDriver
 INFO: No webdriver is bound to current thread: 13 - let's create a new webdriver
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 8556
+Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 45400
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-июл. 14, 2020 11:52:37 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+июл. 14, 2020 1:10:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-июл. 14, 2020 11:52:37 AM com.codeborne.selenide.webdriver.BrowserResizer adjustBrowserSize
+июл. 14, 2020 1:10:02 PM com.codeborne.selenide.webdriver.BrowserResizer adjustBrowserSize
 INFO: Set browser size to 1366x768
-июл. 14, 2020 11:52:38 AM com.codeborne.selenide.webdriver.WebDriverFactory logBrowserVersion
+июл. 14, 2020 1:10:03 PM com.codeborne.selenide.webdriver.WebDriverFactory logBrowserVersion
 INFO: BrowserName=chrome Version=83.0.4103.116 Platform=WINDOWS
-июл. 14, 2020 11:52:38 AM com.codeborne.selenide.webdriver.WebDriverFactory createWebDriver
+июл. 14, 2020 1:10:03 PM com.codeborne.selenide.webdriver.WebDriverFactory createWebDriver
 INFO: Selenide v. 5.3.1
-июл. 14, 2020 11:52:38 AM com.codeborne.selenide.webdriver.WebDriverFactory logSeleniumInfo
+июл. 14, 2020 1:10:03 PM com.codeborne.selenide.webdriver.WebDriverFactory logSeleniumInfo
 INFO: Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
-июл. 14, 2020 11:52:38 AM com.codeborne.selenide.drivercommands.CreateDriverCommand createDriver
-INFO: Create webdriver in current thread 13: ChromeDriver -> ChromeDriver: chrome on WINDOWS (b2cf2e4addfb4264dc48ec639a78ed92)
+июл. 14, 2020 1:10:03 PM com.codeborne.selenide.drivercommands.CreateDriverCommand createDriver
+INFO: Create webdriver in current thread 13: ChromeDriver -> ChromeDriver: chrome on WINDOWS (4df2ab9603b56e4c71ae26520880599b)
 ]]></system-err>
 </testsuite>

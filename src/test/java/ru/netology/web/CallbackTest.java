@@ -16,13 +16,12 @@ public class CallbackTest {
         open("http://localhost:9999");
         SelenideElement form = $("[class=\"form form_size_m form_theme_alfa-on-white\"]");
 
-        form.$("[data-test-id=name] input").setValue("Иванов Олег");
+        form.$("[data-test-id=name] input").setValue("TEST test");
         form.$("[data-test-id=phone] input").setValue("+79991992929");
 
         form.$("[data-test-id=agreement]").click();
         form.$("[class=\"button__text\"]").click();
-
-        $(".Success_successBlock__2L3Cw").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
+        form.$(".input_invalid[data-test-id=name]").shouldHave(exactText("Фамилия и имя Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы."));
     }
 }
 
