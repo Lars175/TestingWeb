@@ -24,9 +24,9 @@ public class CallbackTest {
     static void setUpAll() {
 
 // убедитесь, что файл chromedriver.exe расположен именно в каталоге C:\tmp
-        System.setProperty("webdriver.chrome.driver", "driver\\chrome\\chromedriver.exe");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless", "--disable-gpu", "--ignore-certificate-errors");
+        //System.setProperty("webdriver.chrome.driver", "driver/linux/chromedriver");
+        //ChromeOptions options = new ChromeOptions();
+        //options.addArguments("--headless", "--disable-gpu", "--ignore-certificate-errors");
 //        WebDriver driver = new ChromeDriver(options);
         WebDriverManager.chromedriver().setup();
     }
