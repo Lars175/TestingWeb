@@ -3,7 +3,6 @@ package ru.netology.web;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -12,20 +11,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CallbackTest {
     private WebDriver driver;
-    ChromeOptions options;
 
 
     @BeforeEach
     void setUp() {
         //System.setProperty("webdriver.chrome.driver", "driver/chrome/chromedriver");
-        options = new ChromeOptions();
+        ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless", "--disable-gpu", "--ignore-certificate-errors");
 //        WebDriver driver = new ChromeDriver(options);
         WebDriverManager.chromedriver().setup();
