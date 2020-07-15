@@ -16,7 +16,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class CallbackTest {
+public class CardOrderTest {
     private WebDriver driver;
     ChromeOptions options;
 
