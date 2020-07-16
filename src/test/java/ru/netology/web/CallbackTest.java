@@ -20,7 +20,7 @@ public class CallbackTest {
         form.$("[data-test-id=phone] input").setValue("+79991992929");
 
         form.$("[data-test-id=agreement]").click();
-        form.$("[class=\"button__text\"]").click();
+        form.$("[role=button]").click();
         form.$(".input_invalid[data-test-id=name]").shouldHave(exactText("Фамилия и имя Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы."));
     }
 }
