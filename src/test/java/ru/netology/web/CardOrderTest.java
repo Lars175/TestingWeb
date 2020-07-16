@@ -39,15 +39,17 @@ public class CardOrderTest {
     @Test
     void shouldSubmitRequest() {
         driver.get("http://localhost:9999");
-        List<WebElement> elements = driver.findElements(By.className("input__control"));
-        elements.get(0).sendKeys("Иванов Олег");
-        elements.get(1).sendKeys("+79991992929");
+        List<WebElement> elements = driver.findElements(By.className("[data-test-id=callback-form]"));
+        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иванов Олег");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79991992929");
         driver.findElement(By.className("checkbox__box")).click();
         driver.findElement(By.className("button__text")).click();
 
-        String text = driver.findElement(By.className("Success_successBlock__2L3Cw")).getText();
+        String text = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText();
         assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", text.trim());
     }
+
+
 }
 
 
